@@ -2,6 +2,7 @@ package br.com.java.banco.bean;
 
 import java.time.LocalDate;
 
+
 public class Conta {
 	
 	private Long idConta;
@@ -9,7 +10,7 @@ public class Conta {
 	private String numeroConta;
 	private TipoConta tipoConta;
 	private double saldo;
-	private LocalDate dataAberturaConta = LocalDate.now();
+	private LocalDate dataAberturaConta;
 	
 	public Conta() {
 		

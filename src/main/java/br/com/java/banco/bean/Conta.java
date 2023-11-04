@@ -1,27 +1,26 @@
 package br.com.java.banco.bean;
 
-import java.time.LocalDate;
-
+import java.sql.Date;
 
 public class Conta {
 	
 	private Long idConta;
 	private String agencia;
 	private String numeroConta;
-	private TipoConta tipoConta;
+	private String eTipoConta;
 	private double saldo;
-	private LocalDate dataAberturaConta;
+	private Date dataAberturaConta;
 	
 	public Conta() {
 		
 	}
 
-	public Conta(Long idConta, String agencia, String numeroConta, TipoConta tipoConta, 
-			double saldo, LocalDate dataAberturaConta) {
+	public Conta(Long idConta, String agencia, String numeroConta, String eTipoConta, 
+			double saldo, Date dataAberturaConta) {
 		this.idConta = idConta;
 		this.agencia = agencia;
 		this.numeroConta = numeroConta;
-		this.tipoConta = tipoConta;
+		this.eTipoConta = eTipoConta;
 		this.saldo = saldo;
 		this.dataAberturaConta = dataAberturaConta;;
 	}
@@ -50,12 +49,12 @@ public class Conta {
 		this.numeroConta = numeroConta;
 	}
 
-	public TipoConta getTipoConta() {
-		return tipoConta;
+	public String getTipoConta() {
+		return eTipoConta;
 	}
 
-	public void setTipoConta(TipoConta tipoConta) {
-		this.tipoConta = tipoConta;
+	public void setTipoConta(String eTipoConta) {
+		this.eTipoConta = eTipoConta;
 	}
 
 	public double getSaldo() {
@@ -66,11 +65,11 @@ public class Conta {
 		this.saldo = saldo;
 	}
 
-	public LocalDate getDataAberturaConta() {
+	public Date getDataAberturaConta() {
 		return dataAberturaConta;
 	}
 
-	public void setDataAberturaConta(LocalDate dataAberturaConta) {
+	public void setDataAberturaConta(Date dataAberturaConta) {
 		this.dataAberturaConta = dataAberturaConta;
 	}
 	

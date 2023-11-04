@@ -10,12 +10,12 @@ public class Testes {
 		
 		ContaCorrente cc = new ContaCorrente();
 		cc.setAgencia("1234");
-		cc.setNumeroConta("12345678");
+		cc.setNumeroConta("12345999");
 		cc.setSaldo(0.0);
 		cc.setChequeEspecial(0.0);
 		
 		IContaCorrente dao = DAOFactory.getContaCorrenteDAO();
-		dao.cadastrarContaCorrente(cc);
+		dao.listar();
 
 	}
 

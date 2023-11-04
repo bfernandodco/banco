@@ -1,4 +1,4 @@
-package br.com.java.banco.dao;
+package br.com.java.banco.dao.interfaces;
 
 import java.util.List;
 

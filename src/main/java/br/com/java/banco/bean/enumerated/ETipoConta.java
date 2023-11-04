@@ -1,4 +1,4 @@
-package br.com.java.banco.bean;
+package br.com.java.banco.bean.enumerated;
 
 public enum ETipoConta {
 
